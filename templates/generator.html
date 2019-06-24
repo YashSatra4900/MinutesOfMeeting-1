@@ -2,6 +2,10 @@
 {% block content %}
     <h1 class="heading"> Minutes of Meeting Generator </h1>
     <div class="container">
+    </br>
+	</br>
+	</br>
+	<h2><i>Insert your audio file here:</i></h2>
         {% with messages = get_flashed_messages(with_categories=true)%}
         {% if messages %}
           {% for category, message in messages %}
@@ -17,9 +21,9 @@
             <div class="input-group mb-3">
                     <div class="custom-file">
                       <input type="file" class="custom-file-input" id="inputGroupFile02" name="audio">
-                      <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                      <label class="custom-file-label" for="inputGroupFile02"><i>Choose file</i></label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Upload</button>
+                    <button type="submit" class="btn btn-primary"><i>Upload</i></button>
 
                     
          </form>
